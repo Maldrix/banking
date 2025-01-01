@@ -1,0 +1,218 @@
+
+/*
+    Created on : 24 déc. 2024, 08:40:43
+    Author     : MALDRIX
+*/
+/* Reset CSS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0a0ab1; /* Couleur principale */
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar{
+    background-color: #0a0ab1;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #0a0ab1; /* Couleur d'accent */
+}
+
+.header-actions .btn {
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.connection2{
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+}
+.connection2:hover{
+    background-color: #0099cc;
+    color: #003366;
+}
+.btn-login {
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+.btn-login:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+.btn-signup {
+    background-color: #ffcc00;
+    color: #003366;
+    border: 2px solid #ffcc00;
+}
+
+.btn-signup:hover {
+    background-color: white;
+    color: #003366;
+    border-color: #003366;
+}
+
+
+ .image-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+ .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+.design {
+       font-family: arial, sans-serif;
+       font-weight: bold;
+       align-items: center;
+       background-color: #363434;
+       
+        color: white;
+        }
+        
+.welcome{
+             background-image: url('https://cdn.pixabay.com/photo/2013/07/18/10/56/gold-163519_640.jpg'); /* Remplace 'image.jpg' par le chemin de ton image */
+                background-size: cover; /* Permet de couvrir toute la fenêtre */
+                background-position: center; /* Centre l'image */
+                background-attachment: scroll; /* Rendre l'image fixe lors du défilement */
+                position: relative;
+                height: 60vh; /* La hauteur de la fenêtre */
+                /*align-items: center; /*pour aligner tous les éléments de welcome au centre de la page*/
+                justify-content: center;
+                font-family: arial, sans-serif;
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                color: white;
+                font-weight: bold;
+                font-size: 50px;
+        }
+       
+.connection2{
+            background-color: white;
+            color: #003366;
+            border: 2px solid #003366;
+            justify-items: center;
+            display: block;
+            margin: 0 auto;
+            place-items: center;
+            }
+.connection2:hover{
+            background-color: #0099cc;
+            color: #003366;
+            }
+.solutions{
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            position: relative;
+            height: 60vh;
+            align-items: center;
+            justify-content: right;
+            font-family: arial, sans serif;
+            font-size: 20px;/*talle des caractères*/
+            font-weight: bold;
+            color: black; /*ceci est la couleur du texte dans la div class="outils"*/
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+
+.outils{
+            background-image: url("https://cdn.pixabay.com/photo/2024/01/04/19/09/man-8488212_1280.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            position: relative;
+            height: 60vh;
+            align-items: center;
+            justify-content: right;
+            font-family: arial, sans serif;
+            font-size: 20px;/*talle des caractères*/
+            color: white; /*ceci est la couleur du texte dans la div class="outils"*/
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            
+        }  
+.soluces{
+            width: 50%;
+        }
+.conseils{
+            display: flex;
+            background-color: white;
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: center;
+            height: 60vh;
+            align-items: center;
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+           
+        }
+.bye{
+            display: flex;
+            background-color: #0a0ab1;
+            background-attachment: scroll;
+            height: 60vh;
+            align-items: center;
+            font-family: arial,sans-serif;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+        }
+.foote{
+            background-color: #000000;
+        }
+     
