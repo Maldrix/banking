@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/SignStyle.css">
+        <style>
+                 body {
+                    background-image: url('https://cdn.pixabay.com/photo/2024/08/14/07/05/building-8967854_960_720.jpg'); /* Remplace 'image.jpg' par le chemin de ton image */
+                    background-size: cover; /* Permet de couvrir toute la fenêtre */
+                    background-position: center; /* Centre l'image */
+                    background-attachment: fixed; /* Rendre l'image fixe lors du défilement */
+                    position: relative;
+                    height: 100vh; /* La hauteur de la fenêtre */
+                    align-items: center; /*pour aligner tous les éléments de body au centre de la page*/
+                    justify-content: center;
+                    font-family: arial, sans-serif;
+                    display: flex;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            body::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 255, 0.3); /* Bleu avec opacité de 30% */
+                    z-index: -1; /* Assurer que l'image est en dessous du contenu */
+}
+            form {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                    max-width: 500px;
+                    }
+            h2 {
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                    color: #333;
+                    text-align: center;
+                    }
+            label {
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 5px;
+                    color: #555;
+                    }
+            input, select, button {
+                    width: 90%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    }
+            button {
+                    background-color: #007BFF;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    }
+            button:hover {
+                    background-color: #0056b3;
+                    }
+        </style>
+        
+    </head>
+    <body>
+            <form action="/submit" method="POST">
+        <h2>SIGN UP</h2>
+        
+        <!-- Informations personnelles -->
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" placeholder="Entrz votre email" required>
+
+        <label for="telephone">Numéro de téléphone</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]+" title="Veuillez entrer uniquement des chiffres." required>
+
+        <!-- Identité et résidence -->
+        <label for="identite">Pièce d'identité (type et numéro)</label>
+        <input type="text" id="identite" name="identite" placeholder="Carte d'identité n°123456789" required>
+
+        <label for="residence">Pays de résidence</label>
+        <input type="text" id="residence" name="Pays de residence" required>
+
+        <!-- Informations financières -->
+        <label for="revenus">Revenus mensuels</label>
+        <input type="number" id="revenus" name="revenus" placeholder="Exemple: 2500" required>
+
+        <label for="emploi">Situation professionnelle</label>
+        <select id="emploi" name="emploi" required>
+            <option value="">-- Choisissez une option --</option>
+            <option value="salarie">Salarié</option>
+            <option value="independant">Indépendant</option>
+            <option value="etudiant">Étudiant</option>
+            <option value="autre">Autre</option>
+        </select>
+
+        <!-- Sécurité -->
+        <label for="motdepasse">Mot de passe</label>
+        <input type="password" id="motdepasse" name="motdepasse" required>
+
+        <label for="confirmer_motdepasse">Confirmer le mot de passe</label>
+        <input type="password" id="confirmer_motdepasse" name="confirmer_motdepasse" required>
+
+        <!-- Conditions -->
+        <label>
+            <input type="checkbox" name="conditions" required>J'accepte les <a href="#" target="_blank">conditions générales d'utilisation</a>.
+        </label>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+    </body>
+</html>
